@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void doubleit(int &num) {
+    num *= 2;
+}
+
+int main() {
+    int userInput;
+
+    cout << "Enter an integer: ";
+    cin >> userInput;
+
+    doubleit(userInput);
+
+    cout << "value: " << userInput << endl;
+
+    return 0;
+}
