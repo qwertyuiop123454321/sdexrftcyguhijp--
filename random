@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int Number(int num) {
+    int randomValue = rand() % 100;
+    num += randomValue;
+    return num;
+}
+
+int main() {
+    int userInput;
+
+    cout << "Enter an integer: ";
+    cin >> userInput;
+    int randomone = Number(userInput);
+    cout << "number: " << userInput << endl;
+    cout << "random: " << randomone << endl;
+    return 0;
+}
