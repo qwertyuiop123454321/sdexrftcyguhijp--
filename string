@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void toLowercase(string &str) {
+    for (char &c : str) {
+        c = tolower(c);
+    }
+}
+
+int main() {
+    string userInput;
+    cout << "Enter a string: ";
+    getline(cin, userInput);
+
+    toLowercase(userInput);
+
+    cout << "Lowercase string: " << userInput << endl;
+    return 0;
+}
